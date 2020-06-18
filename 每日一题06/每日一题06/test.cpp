@@ -14,35 +14,35 @@
 #include<vector>
 #include<algorithm>
 using namespace std;
-//int main()
-//{
-//	int w, h, res = 0;
-//	cin >> w >> h;
-//	vector<vector<int>> vv;
-//	vv.resize(w);
-//	//for(auto& e : vv)
-//	//e.resize(h,1);
-//	for (size_t i = 0; i < w; ++i)
-//		vv[i].resize(h, 1);
-//	for (int i = 0; i<w; i++)
-//	{
-//		for (int j = 0; j<h; j++)
-//		{
-//			if (vv[i][j] == 1)
-//			{
-//
-//				// 标记不能放蛋糕的位置
-//				if ((i + 2)<w)
-//					vv[i + 2][j] = 0;
-//				if ((j + 2)<h)
-//					vv[i][j + 2] = 0;
-//				res++;
-//			}
-//		}
-//	}
-//	cout << res;
-//	return 0;
-//}
+int main()
+{
+	int w, h, res = 0;
+	cin >> w >> h;
+	vector<vector<int>> vv;
+	vv.resize(w);
+	//for(auto& e : vv)
+	//e.resize(h,1);
+	for (size_t i = 0; i < w; ++i)
+		vv[i].resize(h, 1);
+	for (int i = 0; i<w; i++)
+	{
+		for (int j = 0; j<h; j++)
+		{
+			if (vv[i][j] == 1)
+			{
+
+				// 标记不能放蛋糕的位置
+				if ((i + 2)<w)
+					vv[i + 2][j] = 0;
+				if ((j + 2)<h)
+					vv[i][j + 2] = 0;
+				res++;
+			}
+		}
+	}
+	cout << res;
+	return 0;
+}
 
 
 //题目二：
@@ -54,10 +54,10 @@ using namespace std;
 //示例1
 //输入
 //	+ 2147483647
-//	1a33
+//		1a33
 //输出
-//	2147483647
-//	0
+//		2147483647
+//		0
 class Solution 
 {
 public:

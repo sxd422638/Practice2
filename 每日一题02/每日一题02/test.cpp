@@ -20,8 +20,8 @@ int main()
 	string s;
 	getline(cin, s);
 	reverse(s.begin(), s.end());//此时翻转了整个句子
-	auto start = s.begin();      //翻转单词 先找到空格的位置 然后再用reverse翻转单词 如果没有结束 就继续 结束可就跳出循环
-	while (start != s.end())
+	auto start = s.begin();      
+	while (start != s.end())//翻转单词 先找到空格的位置 然后再用reverse翻转单词 如果没有结束 就继续 结束可就跳出循环
 	{
 		auto end = start;
 		while (end != s.end() && *end != ' ')
